@@ -10,6 +10,7 @@ WINDOWS = os.name == "nt"
 @task
 def install(ctx) -> None:
     """Create the environment for course."""
+    print("merge conflict simulation")
     ctx.run("uv sync", echo=True, pty=not WINDOWS)
 
 
